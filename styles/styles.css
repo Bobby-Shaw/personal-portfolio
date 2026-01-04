@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --blue-main: #0353A4;
+    --blue-light: #b7cade;
+    --blue-dark: #003366;
+    --white: #dbdbdb;
+    --black: #222222;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    background-color: var(--white);
+}
+
+#head-section {
+    background: url(../assets/gradient-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+nav h1 {
+    font-family: "Bagel Fat One", system-ui;
+    color: var(--white);
+}
+
+nav button {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--blue-main);
+    border: 0;
+    border-radius: 10000px;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 30px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.nav-list li {
+    list-style-type: none;
+    margin: 0 20px;
+    color: var(--white);
+}
+
+.menu-icon-btn {
+    display: none;
+}
+
+.menu-icon-svg {
+    height: 200px;
+}
+
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 20px;
+}
+
+#hero-title-wrapper {
+    text-align: left;
+    font-size: clamp(10em, 10vw, 20px);
+    font-weight: 1000;
+    line-height: 1em;
+    max-width: 900px;
+}
+
+#hero-title-one {
+    font-family: "PT Serif", serif;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+#hero-title-two {
+    font-family: "Bagel Fat One", system-ui;
+    color: var(--white);
+    font-style: normal;
+}
+
+#about-section {
+    background: url(../assets/gradient-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue-light);
+}
+
+.header-one {
+    font-family: "PT Serif", serif;
+    font-style: italic;
+    color: inherit;
+    font-size: 4rem;
+}
+
+.header-two {
+    font-family: "Bagel Fat One", system-ui;
+    color: inherit;
+    font-size: 4rem;
+    font-style: normal;
+}
+
+#about-description {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4em;
+    color: var(--blue-light);
+}
+
+#about-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.about-card {
+    padding: 10px;
+    margin: 7px;
+    border: 2px var(--blue-light) solid;
+    color: var(--blue-light);
+}
+
+.about-card li {
+    list-style-type: none;
+}
+
+.about-card h2 {
+    font-style: italic;
+}
+
+#projects-section {
+    background: url(../assets/gradient-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+#projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue-dark);
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--blue-dark);
+    text-align: center;
+}
+
+.projects-item-heading-wrapper {
+    padding: 0 30px;
+}
+
+.project-header-two {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.project-header-one {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.projects-container hr {
+    width: 20vw;
+    border: 1px var(--blue-dark) solid;
+    border-radius: 20px;
+    height: 0px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    max-width: 1000px;
+    padding: 20px;
+    color: var(--blue-dark);
+}
+
+.project-description {
+    justify-self: center;
+    align-self: center;
+}
+
+.project-thumbnail {
+    max-height: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+.project-source-code-link {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.project-source-code {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: fit-content;
+}
+
+.project-source-code p {
+    margin-right: 10px;
+}
+
+.right-arrow-icon {
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: url(../assets/gradient-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .menu-icon-btn {
+        display: block;
+        height: 30px;
+        width: 30px;        
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    #about-card-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .project-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #about-card-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
