@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="A contact page that allows people can email directly to me from this site" />
+        <meta name="copyright" content="Bobby Shaw 2026" />
+    </head>
+    <body>
+        <nav>
+            <a href="index.html" target="_self"><h1>BOBBY SHAW</h1></a>
+            <ul class="nav-list">
+                <li>ABOUT</li>
+                <li>CV</li>
+                <li>PROJECTS</li>
+            </ul>
+            <a href="contact.html" target="_self"><button>CONTACT ME</button></a>
+            <img class="menu-icon-svg" src="../assets/menu-icon-blue.svg">
+        </nav>
+        <div id="contact-card">
+            <h2>Contact Information</h2>
+            <p>Telephone: +44 7516728294</p>
+            <p>Email: shawuk2006@gmail.com</p>
+        </div>
+        <form id="email-form">
+            <h2>Send me an Email</h2>
+            <div id="form-container">
+                <div class="form-element">
+                    <label class="form-label">Name *</label>
+                    <input type="text" placeholder="Type your name..." class="form-input">
+                    <div class="error-div">
+                        <p>Please fill out this box !</p>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label class="form-label">Email *</label>
+                    <input type="email" placeholder="Type your email..." class="form-input">
+                    <div class="error-div">
+                        <p>Please fill out this box !</p>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label class="form-label">Message *</label>
+                    <textarea placeholder="Type your message..." class="form-input" id="form-textarea"></textarea>
+                    <div class="error-div">
+                        <p>Please fill out this box !</p>
+                    </div>
+                </div>
+                <button id="form-button">Send Email</button>
+            </div>
+        </form>
+        <footer>
+            <p>Bobby Shaw | ©copyright 2026</p>
+        </footer>
+        <script src="../scripts/index.js"></script>
+    </body>
+</html>
