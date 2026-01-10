@@ -74,12 +74,11 @@ nav button {
     color: var(--white);
 }
 
-.menu-icon-btn {
-    display: none;
-}
 
 .menu-icon-svg {
-    height: 200px;
+    cursor: pointer;
+    height: 40px;
+    display: none
 }
 
 #hero-section {
@@ -164,6 +163,12 @@ nav button {
     margin: 7px;
     border: 2px var(--blue-light) solid;
     color: var(--blue-light);
+    cursor: default;
+}
+
+.about-card:hover {
+    color: var(--blue-dark);
+    background-color: var(--blue-light);
 }
 
 .about-card li {
@@ -229,7 +234,7 @@ nav button {
 
 .project-card {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     padding: 20px;
     color: var(--blue-dark);
@@ -238,10 +243,12 @@ nav button {
 .project-description {
     justify-self: center;
     align-self: center;
+    padding: 10px 10px
 }
 
 .project-thumbnail {
-    max-height: 200px;
+    height: 60vh;
+    max-height: 300px;
     justify-self: center;
     align-self: center;
 }
@@ -287,10 +294,8 @@ footer {
         justify-content: space-between;
     }
 
-    .menu-icon-btn {
+    .menu-icon-svg {
         display: block;
-        height: 30px;
-        width: 30px;        
     }
 
     .nav-list {
@@ -306,7 +311,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 950px) {
     .project-card {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
