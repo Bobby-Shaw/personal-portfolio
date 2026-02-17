@@ -18,8 +18,18 @@
                     <li>PROJECTS</li>
                 </ul>
                 <a href="contact.html" target="_self"><button>CONTACT ME</button></a>
-                <img class="menu-icon-svg" src="../assets/menu-icon-white.svg">
+                <button class="menu-icon-svg" onclick="changeVisibility()">toggle</button>
             </nav>
+            <div class="responsive-navbar">
+                <button class="menu-icon-svg">Toggle</button>
+                <ul class="responsive-navlist">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>CV</li>
+                    <li>PROJECTS</li>
+                    <li>CONTACT ME</li>
+                </ul>
+            </div>
             <div id="hero-section">
                 <div id="hero-title-wrapper">
                     <p id="hero-title-one">I'm <span id="hero-title-two">BOBBY SHAW</span></p>
@@ -185,4 +195,5 @@
             <p>Bobby Shaw | ©copyright 2026</p>
         </footer>
     </body>
+    <script src="../scripts/index.js"></script>
 </html>

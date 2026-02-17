@@ -84,11 +84,14 @@ nav button {
     color: var(--white);
 }
 
-
 .menu-icon-svg {
     cursor: pointer;
     height: 40px;
     display: none
+}
+
+.responsive-navbar {
+    display: none;
 }
 
 #hero-section {
@@ -102,7 +105,7 @@ nav button {
 
 #hero-title-wrapper {
     text-align: left;
-    font-size: clamp(10em, 10vw, 20px);
+    font-size: clamp(9.9em, 10vw, 20px);
     font-weight: 1000;
     line-height: 1em;
     max-width: 900px;
